@@ -100,9 +100,6 @@ contract DegenGamingToken {
     require(amount > 0, "No rewards to claim");
 
     rewards[msg.sender] = 0;
-
-    // Perform the reward distribution logic here
-
     emit RewardClaimed(msg.sender, amount);
 
     return amount;
